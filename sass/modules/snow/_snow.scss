@@ -1,0 +1,144 @@
+/*
+|------------------------------------------------------------
+| Snow
+|------------------------------------------------------------
+*/
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: black(0);
+}
+
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+body {
+    background-image: image-url('background.jpg');
+    background-position: top center;
+    font-size: 14px;
+}
+
+.card {
+    width: 900px;
+    padding: 50px;
+    margin: 100px auto 0;
+    background: #FCFCFC;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.20);
+    @extend %clearfix;
+}
+
+.background {
+    background-image: image-url('card.jpg');
+    width: 800px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.snow-1, .snow-2, .snow-3 {
+    width: 800px;
+    height: 900px;
+    position: absolute;
+    bottom: 0;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;
+}
+
+.snow-1 {
+    -webkit-animation-name: snow-1;
+    -webkit-animation-duration: 5s;
+    -moz-animation-name: snow-1;
+    -moz-animation-duration: 5s;
+    -o-animation-name: snow-1;
+    -o-animation-duration: 5s;
+}
+
+.snow-2 {
+    -webkit-animation-name: snow-2;
+    -webkit-animation-duration: 3s;
+    -moz-animation-name: snow-2;
+    -moz-animation-duration: 3s;
+    -o-animation-name: snow-2;
+    -o-animation-duration: 3s;
+}
+
+.snow-3 {
+    -webkit-animation-name: snow-3;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-name: snow-3;
+    -moz-animation-duration: 1.5s;
+    -o-animation-name: snow-3;
+    -o-animation-duration: 1.5s;
+}
+
+@-webkit-keyframes snow-1 {
+    from { bottom: 0; }
+    to {bottom: -450px; }
+}
+@-moz-keyframes snow-1 {
+    from { bottom: 0; }
+    to {bottom: -450px; }
+}
+@-o-keyframes snow-1 {
+    from { bottom: 0; }
+    to {bottom: -450px; }
+}
+
+@-webkit-keyframes snow-2 {
+    from { bottom: 0; }
+    to {bottom: -450px; }
+}
+@-moz-keyframes snow-2 {
+    from { bottom: 0; }
+    to {bottom: -450px; }
+}
+@-o-keyframes snow-2 {
+    from { bottom: 0; }
+    to {bottom: -450px; }
+}
+
+@-webkit-keyframes snow-3 {
+    from { bottom: 0; }
+    to {bottom: -450px; }
+}
+@-moz-keyframes snow-3 {
+    from { bottom: 0; }
+    to {bottom: -450px; }
+}
+@-o-keyframes snow-3 {
+    from { bottom: 0; }
+    to {bottom: -450px; }
+}
+
+p {
+    margin: 10px 0;
+}
+
+.p-left {
+    float: left;
+}
+
+.p-right {
+    float: right;
+}
+
+audio {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}

@@ -1,0 +1,12 @@
+/**
+ * Main style file which is compiled to css.
+ * Used only for including other modules.
+ */
+
+/* Libs */
+@import "compass";
+@import "normalize";
+
+/* Modules */
+// snow
+@import "modules/snow/snow";
